@@ -37,4 +37,4 @@ The data can be used to generate insights for inventory management, pricing stra
 
 ''')
 
-df = pd.read_csv(r"C:\Users\fg\Downloads\ecommerce.csv")
+df = pd.read_csv("ecommerce.csv")
