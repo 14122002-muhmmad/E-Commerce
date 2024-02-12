@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px 
 import streamlit as st
-df = pd.read_csv(r"C:\Users\fg\Downloads\ecommerce.csv")
+df = pd.read_csv("ecommerce.csv")
 categorical_cols = df.select_dtypes(include='O').columns
 numeric_cols = df.select_dtypes(include='number').columns
 df['Month'] =pd.to_datetime(df['Year-Month']).dt.month
