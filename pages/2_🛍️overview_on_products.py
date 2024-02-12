@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px 
 import streamlit as st
-df = pd.read_csv(r"C:\Users\fg\Downloads\ecommerce.csv")
+df = pd.read_csv("ecommerce.csv")
 categorical_cols = df.select_dtypes(include='O').columns
 numeric_cols = df.select_dtypes(include='number').columns
 user_feature = st.selectbox("Select a feature you want to see it's graph with the major categories ",['UnitPrice', 'OrderValue', 'Quantit'])
